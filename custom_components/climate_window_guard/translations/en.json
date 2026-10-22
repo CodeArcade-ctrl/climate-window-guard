@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choose a window and climate entity",
+        "description": "The alert turns on when the window is open and the climate entity reports active heating or cooling.",
+        "data": {
+          "window_entity": "Window contact sensor",
+          "climate_entity": "Climate entity"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This window and climate pair is already configured."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "hvac_window_alert": {"name": "Heating or cooling with window open"}
+    }
+  }
+}

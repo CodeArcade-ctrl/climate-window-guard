@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kies een raam en klimaatapparaat",
+        "description": "Het alarm gaat aan als het raam openstaat en het klimaatapparaat actief verwarmt of koelt.",
+        "data": {
+          "window_entity": "Raamcontact",
+          "climate_entity": "Klimaatapparaat"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Deze combinatie van raam en klimaatapparaat is al ingesteld."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "hvac_window_alert": {"name": "Verwarmen of koelen met raam open"}
+    }
+  }
+}
